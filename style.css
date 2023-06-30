@@ -1,0 +1,406 @@
+body {
+    font-family: Monospace, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #44475a;
+    min-height: 100vh;
+    flex-direction: column;
+    display: flex;
+  }
+
+  main {
+    flex:1;
+  }
+  
+  /* nav */
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #282a36;
+    padding: 10px;
+  }
+
+  .cube-link {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    text-decoration: none;
+  }
+
+  .cube {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: rotate 3s infinite linear;
+  }
+
+  .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #fff;
+  }
+
+  .front {
+    background-color: #ff5555;
+    transform: translateZ(15px);
+  }
+
+  .back {
+    background-color: #f1fa8c;
+    transform: rotateY(180deg) translateZ(14px);
+  }
+
+  .right {
+    background-color: #8be9fd;
+    transform: rotateY(90deg) translateZ(14px);
+  }
+
+  .left {
+    background-color: #bd93f9;
+    transform: rotateY(-90deg) translateZ(14px);
+  }
+
+  .cube-link h2 {
+    color: #ff79c6;
+    margin-left: 10px;
+  }
+
+  .cube-link h2:hover {
+    color: #992165;
+  }
+
+  .categories a {
+    margin-right: 10px;
+    color: #ff79c6;
+    text-decoration: none;
+  }
+
+  .categories a:hover {
+    color: #992165;
+  }
+
+  .fa-shopping-cart {
+    color: #ff79c6;
+    font-size: 25px;
+  }
+
+  .fa-shopping-cart:hover {
+    color: #992165;
+  }
+
+  h1 {
+    color: #8be9fd;
+    text-align: center;
+  }
+
+  h2 {
+    margin-top: 20px;
+    color: #ff5555;
+    text-align: center;
+  }
+
+  h3 {
+    margin-top: 20px;
+    color: #936acc;
+    text-align: center;
+  }
+
+  .galeria {
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: black;
+    border: 5px solid;
+    overflow: hidden;
+  }
+
+  .galeria .fotos {
+    width: 499%;
+    animation-name: animacaoCarrosel;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+  }
+
+
+
+  .galeria .fotos img {
+    width: 19.9%;
+  }
+
+  .produtos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .card {
+    background-color: #282a36;
+    padding: 10px;
+    border: 2px solid #ff5555;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .card img {
+    height: 250px;
+  }
+
+  .card h3 {
+    color: #ff79c6;
+  }
+
+  .card p {
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: justify;
+    color: #8be9fd;
+    
+  }
+
+  .card strong {
+    color: #50fa7b;
+  }
+
+  .dados {
+    display: grid;
+    text-align: center;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: #282a36;
+    color: #50fa7b;
+    border: 2px solid #ff5555;
+  }
+
+  .btn-buy {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #936acc;
+    color: #50fa7b;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+
+  .btn-buy i {
+    color: #50fa7b;
+  }
+
+  .btn-buy i:hover {
+    color: #1d963b;
+  }
+
+  .btn-buy:hover{
+    color: #1d963b;
+  }
+
+  .historiaJogo {
+    margin-left: 20%;
+    margin-right: 20%;
+    color: #8be9fd;
+    background-color: #282a36;
+    border: 2px solid #ff5555;
+    text-align: justify;
+    border-radius: 4px;
+    padding: 10px;
+  }
+
+  table  {
+    border-collapse: collapse;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 30px;
+    color: #8be9fd;
+    background-color: #282a36;
+    border: 2px solid #ff5555;
+    text-align: center;
+    border-radius: 4px;
+    padding: 10px;
+  }
+
+  table th {
+    font-size: larger;
+    border: 2px solid #ff5555;
+  }
+
+  table td {
+    border: 2px solid #ff5555;
+    padding: 8px;
+    text-align: left;
+  }
+
+  h1 .fa-shopping-cart{
+    color: #8be9fd;
+  }
+
+  h1 .fa-shopping-cart:hover{
+    color: #8be9fd;
+  }
+
+  .formulario {
+    display: grid;
+    text-align: justify;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding: 2%;
+    max-width: 56%;
+    margin: 0 auto;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: #282a36;
+    color: #8be9fd;
+    border: 2px solid #ff5555;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+
+  input,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border: 2px solid #ff79c6;
+      border-radius: 4px;
+    }
+
+  select {
+    background-color: #936acc;
+    color: #50fa7b;
+    font-size: large;
+    width: 70%;
+    border: 2px solid #ff79c6;
+    border-radius: 4px;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+
+  select:hover{
+    color: #1d963b;
+  }
+
+  .btn-finaliza {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #936acc;
+    color: #50fa7b;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+
+  .btn-finaliza i {
+    color: #50fa7b;
+  }
+
+  .btn-finaliza:hover {
+    color: #1d963b;
+  }
+
+  .btn-finaliza i:hover {
+    color: #1d963b;
+  }
+
+  #mainCompras {
+    margin-bottom: 30px;
+  }
+
+  footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #282a36;
+    color: #ff79c6;
+    padding: 10px;
+  }
+
+  @media screen and (max-width: 600px) {
+    .galeria {
+        margin-left: 3%;
+        margin-right: 3%;
+      }
+
+    .galeria .fotos {
+        width: 490%;
+      }
+
+    .dados {
+        gap: 10px;
+        padding: 5px;
+        margin-left: 3%;
+        margin-right: 3%;
+        border: 2px solid #ff5555;
+      }
+
+      .btn-buy {
+        font-size: 14px;
+      }
+
+    .historiaJogo {
+        margin-left: 3%;
+        margin-right: 3%;
+        border-radius: 2px;
+        padding: 5px;
+        font-size: small;
+      }
+
+    table {
+        width: 94%;
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+
+    th, td {
+      font-size: small;
+    }
+
+    .formulario {
+        max-width: 94%;
+        margin-left: 3%;
+        margin-right: 3%;
+      }
+
+      label,
+      input,
+      textarea {
+        width: 87%;
+      }
+  }
+
+
+  @keyframes animacaoCarrosel {
+    0% { margin-left: 0; }
+    20% { margin-left: 0; }
+    25% { margin-left: -100%; }
+    45% { margin-left: -100%; }
+    50% { margin-left: -200%; }
+    70% { margin-left: -200%; }
+    75% { margin-left: -300%; }
+    95% { margin-left: -300%; }
+    100% { margin-left: -400%; }
+  }
+
+  @keyframes rotate {
+    0% { transform: rotateY(0deg); }
+    100% { transform: rotateY(360deg); }
+  }

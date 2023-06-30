@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GAMES CUBE</title>
+  <link rel="stylesheet" href="../fontawesome-free-6.4.0-web/css/all.min.css">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header>
+    <nav class="nav">
+      <a href="../index.html" class="cube-link">
+          <div class="cube">
+            <div class="face front"></div>
+            <div class="face back"></div>
+            <div class="face right"></div>
+            <div class="face left"></div>
+          </div>
+          <h2>
+            Games Cube
+          </h2>
+      </a>
+      <div class="categories">
+        <a href="../paginas/categorias/acao.html"><i class="fas fa-gun"></i> Ação</a>
+        <a href="../paginas/categorias/rpg.html"><i class="fas fa-wand-sparkles"></i> RPG</a>
+        <a href="../paginas/categorias/aventura.html"><i class="fas fa-campground"></i> Aventura</a>
+        <a href="../paginas/categorias/simulacao.html"><i class="fas fa-person-rifle"></i> Simulação</a>
+      </div>
+      <span class="cart-icon">
+        <a href="compras.html">
+          <i class="fas fa-shopping-cart"></i>
+        </a>
+      </span>
+    </nav>
+  </header>
+
+  <main id="mainCompras">
+    <h1><i class="fas fa-shopping-cart"></i> CARRINHO DE COMPRAS</h1>
+    <h2>SOBRE</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Jogos</th>
+          <th>Qtd</th>
+          <th>Preço Unitário</th>
+          <th>Total</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Red Dead Redemption 2</td>
+          <td>1x</td>
+          <td>R$ 100,00</td>
+          <td>R$ 100,00</td>
+        </tr>
+        <tr>
+          <td>The Witcher 3: Wild Hunt</td>
+          <td>3x</td>
+          <td>R$ 30,00</td>
+          <td>R$ 90,00</td>
+        </tr>
+        <tr>
+          <td>Project Zomboid</td>
+          <td>2x</td>
+          <td>R$ 40,00</td>
+          <td>R$ 80,00</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3">Total</td>
+          <td>R$ 270,00</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <h3>Preenchemento de dados</h3>
+    <div class="formulario">
+      <form>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+        
+        <label for="sobrenome">Sobrenome:</label>
+        <input type="text" id="sobrenome" name="sobrenome" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="telefone">Telfone:</label>
+        <input type="text" id="telefone" name="telefone" required>
+        
+        <label for="endereco">Endereço:</label>
+        <input type="text" id="endereco" name="endereco" required>
+        
+        <label for="cidade">Cidade:</label>
+        <input type="text" id="cidade" name="cidade" required>
+        
+        <label for="estado">Estado:</label>
+        <input type="text" id="estado" name="estado" required>
+        
+        <label for="cep">CEP:</label>
+        <input type="text" id="cep" name="cep" required>
+      </form>
+    </div>
+    <h3>Forma de Pagamento</h3>
+    <div class="dados">
+        <select id="forma-pagamento" name="forma-pagamento" required>
+          <option value="">Selecione</option>
+          <option value="cartao">Cartão de Crédito</option>
+          <option value="boleto">Boleto Bancário</option>
+          <option value="transferencia">Transferência Bancária</option>
+        </select>
+      <strong>TOTAL: R$270,00</strong>
+      <button type="submit" class="btn-finaliza">
+        <i class="fas fa-shopping-cart"></i> FINALIZAR COMPRA
+      </button>
+    </div>
+  </main>
+
+  <footer>
+    <div>
+      <small>GAMES CUBE</small>
+    </div>
+    <div>
+      <small>© Copyright - Thiago Grunvaldt Fulginiti</small> 
+    </div>
+  </footer>
+</body>
+</html>
